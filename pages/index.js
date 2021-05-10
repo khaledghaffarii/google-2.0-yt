@@ -20,11 +20,7 @@ export default function Home() {
         <div className="flex space-x-4 items-center">
           <p className="link">Gmail</p>
           <p className="link">Image</p>
-          <Avatar
-            url=
-              "https://react-portfolio-a71fa.web.app/images/khaledghaffari.png"
-            
-          />
+          <Avatar url="https://avatars.githubusercontent.com/u/75438046?s=400&u=4ad31515204e1d0d63e7940b107a25b85382a77c&v=4" />
         </div>
       </header>
     </div>
