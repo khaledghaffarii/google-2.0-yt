@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Avatar from "../components/Avatar";
+import { ViewGridIcon } from "@heroicons/react/solid";
 export default function Home() {
   return (
     <div>
@@ -20,9 +21,19 @@ export default function Home() {
         <div className="flex space-x-4 items-center">
           <p className="link">Gmail</p>
           <p className="link">Image</p>
+          <ViewGridIcon className="h-10 w-10 animation transition duration-150 transform hover:scale-110 rounded-full p-2 hover:bg-gray-100 cursor-pointer" />
           <Avatar url="https://avatars.githubusercontent.com/u/75438046?s=400&u=4ad31515204e1d0d63e7940b107a25b85382a77c&v=4" />
         </div>
       </header>
+
+      <form className="p-10"> 
+        <Image
+          src="https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          height={100}
+          width={300}
+          
+        />
+      </form>
     </div>
   );
 }
