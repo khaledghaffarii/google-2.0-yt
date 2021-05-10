@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-
+import Avatar from "../components/Avatar";
 export default function Home() {
   return (
     <div>
@@ -20,6 +20,11 @@ export default function Home() {
         <div className="flex space-x-4 items-center">
           <p className="link">Gmail</p>
           <p className="link">Image</p>
+          <Avatar
+            url=
+              "https://react-portfolio-a71fa.web.app/images/khaledghaffari.png"
+            
+          />
         </div>
       </header>
     </div>
