@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Avatar from "../components/Avatar";
+import Footer from "../components/Footer";
 import { ViewGridIcon, MicrophoneIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
 export default function Home() {
@@ -44,6 +45,7 @@ export default function Home() {
           <button className="btn"> I'm Felling Lucky</button>
         </div>
       </form>
+      <Footer/>
     </div>
   );
 }
