@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { ViewGridIcon, MicrophoneIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
 import Avatar from "../components/Avatar";
+import HeaderOptions from "../components/HeaderOptions";
 function Header() {
   const router = useRouter();
   const searchInputRef = useRef(null);
@@ -18,7 +19,7 @@ function Header() {
   };
   return (
     <header className="sticky top-0 bg-white">
-      <div style={{ display: "flex", alignItems: "center", margin: 10 }}>
+      <div className="flex p-6 w-full items-center">
         <Image
           src="https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
           height={33}
@@ -46,6 +47,8 @@ function Header() {
         </form>
         <Avatar className="ml-auto" url="https://avatars.githubusercontent.com/u/75438046?s=400&u=4ad31515204e1d0d63e7940b107a25b85382a77c&v=4" />
       </div>
+      {/* Header option component */}
+      <HeaderOptions/>
     </header>
   );
 }
