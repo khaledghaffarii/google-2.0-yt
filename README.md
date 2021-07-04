@@ -1,9 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
+## Google-Clone With NextJs and TailwindCss 
+![NextJS Resume Website Google-clone](google.png?raw=true "NextJS Resume Website Template")
 First, run the development server:
-
+## <a href="https://google-khaled.vercel.app/" target="_blank">LIVE DEMO</a>
 ```bash
 npm run dev
 # or
