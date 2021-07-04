@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import { API_KEY, CONTEXT_KEY } from "../keys";
 function Search({results}) {
-    console.log(results)
+    //console.log(results)
     return (
         <div>
             <Head>
