@@ -1,3 +1,4 @@
+import PaginationButtons from "../components/PaginationButtons";
 function SearchResults({ results }) {
   return (
     <div className="mx-auto w-full px-3 sm:pl-[5%] md:pl-[14%] lg:pl-52 ">
@@ -17,9 +18,10 @@ function SearchResults({ results }) {
               </h2>
             </a>
           </div>
-          <p className="text-gray-500 line-clamp-2" > {result.snippet} </p>
+          <p className="text-gray-500 line-clamp-2"> {result.snippet} </p>
         </div>
       ))}
+      <PaginationButtons />
     </div>
   );
 }
