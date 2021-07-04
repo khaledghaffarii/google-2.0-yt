@@ -17,7 +17,7 @@ function SearchResults({ results }) {
               </h2>
             </a>
           </div>
-          <p className="text-gray-500"> {result.snippet} </p>
+          <p className="text-gray-500 line-clamp-2" > {result.snippet} </p>
         </div>
       ))}
     </div>
