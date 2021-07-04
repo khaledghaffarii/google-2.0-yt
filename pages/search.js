@@ -1,12 +1,16 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import { API_KEY, CONTEXT_KEY } from "../keys";
+import Response from "../Response";
+import { useRouter } from "next/router";
+
 function Search({results}) {
-    //console.log(results)
+      const router = useRouter();
+    console.log(results)
     return (
         <div>
             <Head>
-                <title>Search Page</title>
+                <title> {router.query.term} - Google Search</title>
                 <link ref="icon" href="/favicon.ico"/>
             </Head>
             <Header/>
