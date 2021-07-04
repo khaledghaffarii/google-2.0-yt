@@ -22,33 +22,38 @@ function Header() {
       <div className="flex p-6 w-full items-center">
         <Image
           src="https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-          height={33}
-          width={92}
-          className="cursor-pointer ml-4"
+          height={50}
+          width={120}
+          className="cursor-pointer "
           onClick={() => router.push("/")}
         />
-      
-        <form className=" flex flex-grow w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-lg rounded-full border border-gray-500  px-4 py-3  pl-10 items-center sm:max-w-xl lg:max-w-2xl">
+
+        <form className=" flex flex-grow w-full mt-5 shadow-lg focus-within:shadow-lg max-w-3xl rounded-full border border-gray-200  px-6 py-3  mr-5 ml-10 items-center ">
+          {/* sm:max-w-xl lg:max-w-2xl */}
           <input
             ref={searchInputRef}
             type="text"
-            className="focus:outline-none flex-grow  "
+            className="focus:outline-none flex-grow w-full"
           />
-          {/* <MicrophoneIcon className="h-4 mr-4 hidden sm:inline-flex text-blue-500 border-l-2 pl-4 border-gray-300 cursor-pointer" /> */}
           <XIcon
-            className="h-5 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125 "
+            className="h-7 sm:mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125 "
             onClick={() => (searchInputRef.current.value = "")}
           />
-          {/* <SearchIcon className="h-4 mr-4 hidden sm:inline-flex text-blue-500 border-l-2 pl-4 border-gray-300 cursor-pointer " /> */}
+          <MicrophoneIcon className="h-6 mr-3 hidden sm:inline-flex text-blue-500 border-l-2 pl-4 border-gray-300 cursor-pointer transition duration-100 transform hover:scale-125" />
+
+          <SearchIcon className="h-6 hidden sm:inline-flex text-blue-500 border-l-2 pl-4 border-gray-300 cursor-pointer transition duration-100 transform hover:scale-125 " />
           <button hidden className="btn " onClick={search}>
             {" "}
             Google Search
           </button>
         </form>
-        <Avatar className="ml-auto" url="https://avatars.githubusercontent.com/u/75438046?s=400&u=4ad31515204e1d0d63e7940b107a25b85382a77c&v=4" />
+        <Avatar
+          className="ml-auto"
+          url="https://avatars.githubusercontent.com/u/75438046?s=400&u=4ad31515204e1d0d63e7940b107a25b85382a77c&v=4"
+        />
       </div>
       {/* Header option component */}
-      <HeaderOptions/>
+      <HeaderOptions />
     </header>
   );
 }
